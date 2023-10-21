@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div id="score-board">
+            <div id="score-board-heading">Score</div>
+            <div id="score-section">
+                <div class="score">
+                    <div class="score-player">X</div>
+                    <div id="player-x-score" class="score-points">0</div>
+                </div>
+                <div class="score">
+                    <div class="score-player">O</div>
+                    <div id="player-o-score" class="score-points">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="game-ui">
+            <input type="text" id="cell-1" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-2" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-3" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-4" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-5" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-6" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-7" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-8" class="cell" onclick="markCell(event); gameLogic();" readonly />
+            <input type="text" id="cell-9" class="cell" onclick="markCell(event); gameLogic();" readonly />
+        </div>
+        <div id="message">Player X's Turn</div>
+        <button id="restart" onclick="restart()">Restart</button>
+        <button id="reset" onclick="reset()">Reset</button>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+:root {
+    --border: 2px solid hsl(0 0% 60%);
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-weight: bold;
+  font-size: 2.5em; 
+  color: #333; 
+
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+ -webkit-background-clip: text;
+  color: transparent;
+
+  padding: 20px; 
+  margin: 0; 
+  text-align: center; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#score-board {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    
+}
+#score-board-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #ff5733;
+    letter-spacing: 4px;
+}
+#score-section {
+    display: flex;
+    
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+   
+}
+.score-player {
+    font-size: 1.5rem;
+}
+.score-points {
+    font-size: 1.25rem;
+}
+.game-ui {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin-right: auto;
+    margin-left: auto;
+}
+.cell {
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+}
+#cell-1,
+#cell-2,
+#cell-4,
+#cell-5 {
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+#cell-3,
+#cell-6 {
+    border-bottom: var(--border);
+}
+#cell-7,
+#cell-8 {
+    border-right: var(--border);
+}
+.win {
+    color: goldenrod;
+    font-weight: 700;
+}
+#message {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+#restart {
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+#reset {
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    background-color: crimson;
+    color: white;
+}
